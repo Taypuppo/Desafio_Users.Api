@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Models
+namespace Users.Api.Models
 {
     [Table("users")]
     public class User
@@ -12,11 +12,11 @@ namespace Models
         [Column("name")]
         [MinLength(10)]
         [MaxLength(100)]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
         [Column("email")]
         [MinLength(10)]
         [MaxLength(100)]
-        public string Email { get; set; }
+        public string Email { get; set; } = string.Empty;
     }
 }

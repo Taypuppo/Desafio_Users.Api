@@ -1,3 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using Users.Api.Models;
+
+
 namespace Users.Api;
 
 public class Startup
@@ -11,14 +15,13 @@ public class Startup
 
     public void ConfigureServices(IServiceCollection services)
     {
-        // add your services here
+        services.AddDbContext<AppDbContext>(options =>
+            options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+
         services.AddControllers();
-        
-        // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
-        //services.AddDbContext<UserContext>();
-        //services.AddTransient<DbContext, UserContext>();
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -33,7 +36,7 @@ public class Startup
         app.UseHttpsRedirection();
 
         app.UseRouting();
-        
+
         app.UseAuthorization();
 
         app.UseEndpoints(endpoints =>

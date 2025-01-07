@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/hemerson/dev/dotnet/users.api/Users.Api/Users.Api.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\Desafio Aguia\\users.api\\Users.Api\\Users.Api.csproj": {}
   },
   "projects": {
-    "/home/hemerson/dev/dotnet/users.api/Users.Api/Users.Api.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\Desafio Aguia\\users.api\\Users.Api\\Users.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/hemerson/dev/dotnet/users.api/Users.Api/Users.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Desafio Aguia\\users.api\\Users.Api\\Users.Api.csproj",
         "projectName": "Users.Api",
-        "projectPath": "/home/hemerson/dev/dotnet/users.api/Users.Api/Users.Api.csproj",
-        "packagesPath": "/home/hemerson/.nuget/packages/",
-        "outputPath": "/home/hemerson/dev/dotnet/users.api/Users.Api/obj/",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Desafio Aguia\\users.api\\Users.Api\\Users.Api.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Desafio Aguia\\users.api\\Users.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/hemerson/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,12 +32,33 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -62,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
